@@ -114,69 +114,30 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
 ];
 
+export type TeamTag = "Management" | "Design" | "Web" | "Game";
+
 export type TeamMember = {
   name: string;
   role: string;
   fun: string;
-  title: String;
-  avatarUrl?: string;
+  avatarUrl: string;
+  title: string;
+  tag: TeamTag;
 };
 
-// export const TEAM_MEMBERS: TeamMember[] = [
-//   {
-//     name: "Aria",
-//     role: "Game Designer",
-//     fun: "Turns coffee into boss fights and dopamine loops.",
-//     avatarUrl: "/images/team/aria.jpg",
-//     title: "champian of fun",
-//   },
-//   {
-//     name: "Kunal",
-//     role: "Unity Engineer",
-//     fun: "Ships buttery controls… then optimizes them again.",
-//     avatarUrl: "/images/team/kunal.jpg",
-//     title: "champian of fun",
-//   },
-//   {
-//     name: "Mei",
-//     role: "3D Artist",
-//     fun: "Makes pixels feel expensive.",
-//     avatarUrl: "/images/team/mei.jpg",
-//     title: "champian of fun",
-//   },
-//   {
-//     name: "Rohit",
-//     role: "Tech Artist",
-//     fun: "Shaders so clean you can eat off them.",
-//     avatarUrl: "/images/team/rohit.jpg",
-//     title: "champian of fun",
-//   },
-//   {
-//     name: "Sana",
-//     role: "Producer",
-//     fun: "Calendar whisperer. Chaos-resistant.",
-//     avatarUrl: "/images/team/sana.jpg",
-//     title: "champian of fun",
-//   },
-//   {
-//     name: "Jay",
-//     role: "UI/UX",
-//     fun: "Clicks that feel illegal (in a good way).",
-//     avatarUrl: "/images/team/jay.jpg",
-//     title: "champian of fun",
-//   },
-// ];
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Sajdin",
     role: "Studio Director",
+    tag: "Management",
     fun: "Keeps the vision ambitious, the scope sane, and the builds moving forward.",
     avatarUrl: "https://i.ibb.co/k6Sk7QN4/gv10zaekcwdnat1hdnk1.webp",
     title: "Studio Captain",
   },
   {
-    name: "prasad",
+    name: "Prasad",
     role: "3D Artist",
+    tag: "Design",
     fun: "Turns boring grey cubes into characters and environments with real personality.",
     avatarUrl: "https://i.ibb.co/LX4WQ464/gyzzdho4sfxsf2hpug7v.webp",
     title: "3D Worldbuilder",
@@ -184,6 +145,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Anzal",
     role: "Web Developer",
+    tag: "Web",
     fun: "Ships web builds that load fast and never fall apart on launch day.",
     avatarUrl: "https://i.ibb.co/7tRj5m0d/nq0llrnsfrq7cvblddve.webp",
     title: "Web Pipeline Wizard",
@@ -191,6 +153,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Om",
     role: "Game Developer",
+    tag: "Game",
     fun: "Breaks the game in the morning, fixes it by night, and makes it fun.",
     avatarUrl: "https://i.ibb.co/BHnG2CYv/oguybsfijvqr30hhwnig.webp",
     title: "Gameplay Engineer",
@@ -198,6 +161,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Aditya",
     role: "UI/UX & Product Designer",
+    tag: "Design",
     fun: "Obsessed with interfaces where players never wonder, “Where do I click next?”",
     avatarUrl: "https://i.ibb.co/23Qw86cN/qdmyej0yw8jjjzmnolak.webp",
     title: "Experience Architect",
@@ -205,6 +169,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Arti",
     role: "Game Developer",
+    tag: "Game",
     fun: "Builds the systems and pipelines that keep our games stable, scalable, and fun to work on.",
     avatarUrl: "https://i.ibb.co/mC3ZZBLf/vvktlyk6lyoimuc9aqya.webp",
     title: "Gameplay Tech Architect",
@@ -212,6 +177,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Shagirul",
     role: "Web Developer",
+    tag: "Web",
     fun: "Connects our games, tools, and data so everything quietly works together.",
     avatarUrl: "https://i.ibb.co/Ps2jm4SG/ycxscgjai5e4kcgranw0.webp",
     title: "Systems Connector",

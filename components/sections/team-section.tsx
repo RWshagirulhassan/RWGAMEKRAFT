@@ -41,12 +41,12 @@ function TeamCard({ member }: { member: TeamMember }) {
           <p className="truncate text-sm font-semibold text-foreground">
             {member.name}
           </p>
-          <p className="truncate text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+          <p className="truncate text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             {member.role}
           </p>
         </div>
         <span className="rounded-full border border-border/70 bg-muted/40 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-          Team
+          {member.tag}
         </span>
       </CardContent>
     </Card>
@@ -73,7 +73,7 @@ export function TeamSection() {
             <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-background to-transparent" /> */}
 
             <div
-              className="team-belt mx-4 flex gap-5 overflow-x-auto px-4 py-2 md:-mx-6 md:px-6"
+              className="team-belt no-scrollbar mx-4 flex gap-5 overflow-x-auto px-4 py-2 md:-mx-6 md:px-6"
               aria-label="Team carousel"
             >
               {TEAM_MEMBERS.map((m) => (
