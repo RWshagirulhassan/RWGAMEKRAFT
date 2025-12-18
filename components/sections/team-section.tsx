@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
 import { SectionHeader } from "@/components/common/section-header";
 import { Card, CardContent } from "@/components/ui/card";
 import { TEAM_MEMBERS, TeamMember } from "@/lib/content";
@@ -11,10 +10,10 @@ function TeamCard({ member }: { member: TeamMember }) {
     <Card className="group relative w-[280px] shrink-0 overflow-hidden border-border/80 bg-card/90 transition hover:-translate-y-1 hover:border-primary/70 hover:shadow-soft-lg sm:w-[320px]">
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted/70">
         {member.avatarUrl ? (
-          <Image
+          <img
             src={member.avatarUrl}
             alt={member.name}
-            fill
+            // fill
             className="object-cover"
           />
         ) : (

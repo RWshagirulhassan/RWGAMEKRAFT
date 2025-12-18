@@ -1,6 +1,6 @@
 "use client";
 
-import { PLATFORM_CTAS, PLATFORM_META } from "@/lib/content";
+import { PLATFORM_META } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 // import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Star } from "lucide-react";

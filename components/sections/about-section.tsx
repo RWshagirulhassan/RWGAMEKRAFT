@@ -1,6 +1,6 @@
-import { ABOUT_HIGHLIGHTS } from "@/lib/content";
+// import { ABOUT_HIGHLIGHTS } from "@/lib/content";
 import { SectionHeader } from "@/components/common/section-header";
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 
 export function AboutSection() {
   return (
@@ -18,7 +18,7 @@ export function AboutSection() {
         />
 
         <div className="mt-8 grid gap-4 md:grid-cols-2">
-          {ABOUT_HIGHLIGHTS.map((card) => (
+          {/* {ABOUT_HIGHLIGHTS.map((card) => (
             <Card
               key={card.title}
               className="flex h-full flex-col border-border/80 bg-card/90"
@@ -37,7 +37,7 @@ export function AboutSection() {
                 </p>
               </CardContent>
             </Card>
-          ))}
+          ))} */}
         </div>
       </div>
     </section>
