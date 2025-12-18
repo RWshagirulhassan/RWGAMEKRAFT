@@ -67,10 +67,10 @@ export function TeamSection() {
           subtitle="A small squad obsessed with feel, polish, and shipping. Hover a card for a fun intro — and swipe through."
         />
 
-        <div className="mt-8 w-full overflow-x-hidden">
+        <div className="mt-8 overflow-x-hidden w-full lg:w-[120%] lg:-mx-[10%]">
           <div className="relative">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-background to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-background to-transparent" />
+            {/* <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-background to-transparent" /> */}
 
             <div
               className="team-belt mx-4 flex gap-5 overflow-x-auto px-4 py-2 md:-mx-6 md:px-6"

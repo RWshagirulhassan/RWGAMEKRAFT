@@ -25,13 +25,13 @@ export function OfferingsSection() {
               className="flex h-full flex-col border-border/80 bg-card/90"
             >
               <CardContent>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-accent">
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
                   {offering.label}
                 </p>
                 <h3 className="mt-2 text-base font-semibold text-foreground md:text-lg">
                   {offering.title}
                 </h3>
-                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                   {offering.description}
                 </p>
                 <ul className="mt-4 space-y-2 text-[13px] text-foreground/90">

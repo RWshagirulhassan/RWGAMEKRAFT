@@ -175,7 +175,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     title: "Studio Captain",
   },
   {
-    name: "Pashu",
+    name: "prasad",
     role: "3D Artist",
     fun: "Turns boring grey cubes into characters and environments with real personality.",
     avatarUrl: "https://i.ibb.co/LX4WQ464/gyzzdho4sfxsf2hpug7v.webp",
