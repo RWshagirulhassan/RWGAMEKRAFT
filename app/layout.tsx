@@ -6,12 +6,34 @@ import { cn } from "@/lib/utils";
 const fontSans = Rajdhani({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["300", "400", "500", "600", "700"], // use full weight range
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.rwgamekraft.com"),
   title: "RW GameKraft",
   description: "Bold, modern game development studio.",
+  openGraph: {
+    title: "RW GameKraft",
+    description: "Bold, modern game development studio.",
+    url: "/",
+    siteName: "RW GameKraft",
+    type: "website",
+    images: [
+      {
+        url: "/assets/og.png",
+        width: 1200,
+        height: 630,
+        alt: "RW GameKraft",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RW GameKraft",
+    description: "Bold, modern game development studio.",
+    images: ["/assets/og.png"],
+  },
 };
 
 export default function RootLayout({
