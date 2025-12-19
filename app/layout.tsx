@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.rwgamekraft.com"),
   title: "RW GameKraft",
   description: "Bold, modern game development studio.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "RW GameKraft",
     description: "Bold, modern game development studio.",
@@ -21,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/og.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "RW GameKraft",
@@ -32,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RW GameKraft",
     description: "Bold, modern game development studio.",
-    images: ["/assets/og.png"],
+    images: ["/og.png"],
   },
 };
 
