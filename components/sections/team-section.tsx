@@ -73,7 +73,7 @@ export function TeamSection() {
             <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-background to-transparent" /> */}
 
             <div
-              className="team-belt no-scrollbar mx-4 flex gap-5 overflow-x-auto px-4 py-2 md:-mx-6 md:px-6"
+              className="team-belt small-scrollbar mx-4 flex gap-5 overflow-x-auto px-4 py-2 md:-mx-6 md:px-6"
               aria-label="Team carousel"
             >
               {TEAM_MEMBERS.map((m) => (

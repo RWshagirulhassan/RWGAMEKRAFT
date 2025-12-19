@@ -77,11 +77,33 @@ body {
 .container {
   @apply px-4 md:px-6;
 }
-/* hide scrollbar but keep scrolling */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+
+/* Dark background friendly scrollbar (does NOT set overflow) */
+.small-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: hsl(var(--foreground) / 0.6) hsl(var(--foreground) / 0.12);
+  scrollbar-gutter: stable;
 }
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none; /* Firefox */
+
+/* Chrome/Safari/Edge */
+.small-scrollbar::-webkit-scrollbar {
+  height: 8px; /* important for horizontal */
+  width: 8px;
+}
+
+.small-scrollbar::-webkit-scrollbar-track {
+  background: hsl(var(--foreground) / 0.12);
+  border-radius: 9999px;
+}
+
+.small-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--foreground) / 0.6);
+  border-radius: 9999px;
+
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.small-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--foreground) / 0.85);
 }

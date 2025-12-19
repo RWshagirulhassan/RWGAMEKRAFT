@@ -10,8 +10,8 @@ const fontSans = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "Game Studio Landing",
-  description: "Bold, modern landing page for a game development studio.",
+  title: "RW GameKraft",
+  description: "Bold, modern game development studio.",
 };
 
 export default function RootLayout({

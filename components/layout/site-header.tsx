@@ -84,7 +84,7 @@ export function SiteHeader({ className }: HeaderProps) {
             className="rounded-full bg-primary px-5 py-2 text-sm "
           >
             <Link href="#contact" aria-label="Contact">
-              <span className="mr-1.5">Contact</span>
+              <span className="">Contact</span>
               {/* <ArrowRight className="h-3.5 w-3.5" /> */}
             </Link>
           </Button>
